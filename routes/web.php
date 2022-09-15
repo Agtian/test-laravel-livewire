@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{CountController, DataBinding, GettingStartedController, HomeController};
+use App\Http\Controllers\{CountController, DataBinding, GettingStartedController, HomeController, LifecycleHooksController};
 use App\Http\Livewire\Counter;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +27,5 @@ Route::get('/getting-started/installation', [GettingStartedController::class, 'i
 Route::get('/counter', [CountController::class, 'index'])->name('counter');
 
 Route::get('/data-binding', [DataBinding::class, 'index'])->name('data-binding');
+
+Route::get('/lifecycle-hooks', [LifecycleHooksController::class, 'index'])->name('lifecycle-hooks');

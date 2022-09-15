@@ -26,7 +26,7 @@
                     <a href="{{ route('data-binding') }}">Data Binding</a>
                 </li>
                 <li>
-                    <a href="#">Actions</a>
+                    <a href="{{ route('lifecycle-hooks') }}">Lifecycle Hooks</a>
                 </li>
             </ul>
         </li>
