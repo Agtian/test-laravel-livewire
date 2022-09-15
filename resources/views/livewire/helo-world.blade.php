@@ -23,4 +23,5 @@
         <option value="Jambu">Jambu</option>
     </select>
     {{ implode(', ' , $fruits) }} 
+    <button wire:click="resetFruit">Reset</button>
 </div>

@@ -13,6 +13,11 @@ class HeloWorld extends Component
     public $loud = false;
     public $fruits = [''];
 
+    public function resetFruit()
+    {
+        $this->fruits = [''];
+    }
+
     public function render()
     {
         return view('livewire.helo-world');
