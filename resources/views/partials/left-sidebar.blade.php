@@ -28,6 +28,9 @@
                 <li>
                     <a href="{{ route('lifecycle-hooks') }}">Lifecycle Hooks</a>
                 </li>
+                <li>
+                    <a href="{{ route('nesting') }}">Nesting</a>
+                </li>
             </ul>
         </li>
         <li>
