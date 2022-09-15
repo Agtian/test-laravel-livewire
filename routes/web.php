@@ -1,0 +1,29 @@
+<?php
+
+use App\Http\Controllers\{CountController, DataBinding, GettingStartedController, HomeController};
+use App\Http\Livewire\Counter;
+use Illuminate\Support\Facades\Route;
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/getting-started/installation', [GettingStartedController::class, 'installation'])->name('installation');
+
+Route::get('/counter', [CountController::class, 'index'])->name('counter');
+
+Route::get('/data-binding', [DataBinding::class, 'index'])->name('data-binding');
